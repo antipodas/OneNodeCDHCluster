@@ -1,5 +1,8 @@
 #! /bin/bash
 
+echo "update system"
+yum update -y
+
 echo "-- Configure and optimize the OS"
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
